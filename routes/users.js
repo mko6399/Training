@@ -14,13 +14,6 @@ const storage = multer.diskStorage({
     cb(null, new Date().getTime() + "_" + file.originalname);
   },
 });
-// let x = "asdc";
-// x.toLowerCase;
-
-// function getegid(name = "asdc") {
-//   return "test" + name;
-// }
-
 const upload = multer({ storage: storage });
 
 /* GET users listing. */
@@ -78,14 +71,4 @@ router.delete("/:id", async function (req, res, next) {
     res.status(500).send("ID not found");
   }
 });
-
-let arrayTest = [1, 2, 3, 4, 5, 6];
-let arrayTest2 = [10, 20, 30, 40, 50, 60];
-
-// arrayTest.forEach((item, index) => {
-//   arrayTest2.push(item);
-// });
-
-// console.log(arrayTest2);
-
 module.exports = router;
