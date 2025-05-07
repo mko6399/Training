@@ -79,8 +79,8 @@ router.delete("/:id", async function (req, res, next) {
   }
 });
 
-// let arrayTest = [1, 2, 3, 4, 5, 6];
-// let arrayTest2 = [10, 20, 30, 40, 50, 60];
+let arrayTest = [1, 2, 3, 4, 5, 6];
+let arrayTest2 = [10, 20, 30, 40, 50, 60];
 
 // arrayTest.forEach((item, index) => {
 //   arrayTest2.push(item);
